@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="./img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>The Round Pencil</title>
@@ -15,25 +15,26 @@
     <!-- Bootstrap core CSS     -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/paper-kit.css?v=2.1.0" rel="stylesheet" />
-    <link href="./css/custom.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135504826-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+   <script>
+        window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-135504826-1');
+        gtag('config', 'UA-135504826-1');
+
     </script>
 
+-->
 
   </head>
 
@@ -75,48 +76,53 @@
 
     <div class="wrapper">
       <br />
-      <div class="section section-dark" style="padding-top: 70px;padding-bottom: 10px;" id="Land">
-        <div class="container text-center">
-          <img src="./img/theroundpencil.png" class="img img-responsive" alt="The Round Pencil Logo">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto text-center">
-              <h3 class="title">Just another</h3>
-              <h3 class="title">
-                <span class="txt-rotate" data-period="200" data-rotate='[ "nerd", "product-guy", "poet", "wordsmith", "friend" ]'>
-                </span></h3>
-              <h3>
-                next door !!
-              </h3>
+      <div class="section section-dark" style="padding-top: 70px;padding-bottom: 10px;" id="Intro">
+        <div data-aos="fade-up" class="container text-center">
+          <img src="./img/app.png" class="img img-responsive" alt="Bl0g Logo">
+          <div class="row text-center">
+            <div data-aos="fade-up" class="col-md-8 ml-auto mr-auto text-center">
+              <h1 class="title">C0de</h1>
+              <h3 class="description">while(!(succeed=try()));</h3><br />
+              <p>Apps for simple needs, built with <b>security & privacy</b> at its core, <b>without</b> the invasion of <b>ads</b>, everywhere.</p>
+            </div>
+          </div>
 
+        </div>
+
+      </div>
+
+      <div data-aos="fade-up" style="padding: 10px;" class="section section-dark" id="showcase">
+        <div class="container text-center">
+          <div class="row">
+            <div data-aos="flip-left" class="col-md-6 text-center">
+              <h2 class="title">M0rx</h2>
+              <img src="./img/m0rx.png" class="img img-responsive" alt="M0rx Logo">
+              <p>Send Disappearing images, messages and files, encrypted with your own passcode, through your favourite messaging apps - WhatsApp, Facebook Messenger, Telegram, Slack, SMS and more. And of course, did we say that you can also convert
+                messages using the good old Morse Code?</p>
+              <a href="m0rx.html"><button type="button" class="btn btn-danger btn-link">Read More</button></a>
+              <div class="author">
+                <a href="https://play.google.com/store/apps/details?id=com.theroundpencil.m0rx&amp;utm_source=trpsite"><img class="img-no-padding" alt="Get it on Google Play" style="width:50%;max-width:200px;"
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'></a>
+              </div>
+            </div>
+
+            <div data-aos="flip-right" class="col-md-6 text-center">
+              <h2 class="title">N0W</h2>
+              <img src="./img/N0W.png" class="img img-responsive" alt="N0W Logo">
+              <p>A secure, on-device chat bot that helps you save information about your assets, liabilities, and real net-worth.
+                Store details about all your assets, stocks, gadgets, property, precious metals and more, and get a quick view of your networth and key insights, not just for your own self, but for your family as well. </p>
+              <a href="n0w.html">
+                <button type="button" class="btn btn-danger btn-link">Read More</button></a>
+              <div class="author">
+                <a href="https://play.google.com/store/apps/details?id=com.theroundpencil.n0w&amp;utm_source=trpsite"><img class="img-no-padding" alt="Get it on Google Play" style="width:50%;max-width:200px;"
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'></a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-
-    <div class="section section-dark" style="padding:5px;" id="Buttons">
-      <div class="container text-center">
-        <p>
-          <div class="col">
-            <button onclick="openpage('wh0.html')" class="btn btn-sm btn-success btn-fill"><i class="fas fa-user-astronaut"></i> Wh0?</button>
-            <button onclick="openpage('c0de.html')" class="btn btn-sm btn-primary btn-fill"><i class="fas fa-code"></i> C0de</button>
-            <button onclick="openpage('s0lv.html')" class="btn btn-sm btn-info btn-fill"><i class="fas fa-user-friends"></i> S0lv</button>
-          </div>
-        </p>
-        <p>
-          <div class="col">
-            <button onclick="openpage('bl0g.html')" class="btn btn-sm btn-danger btn-fill"><i class="fas fa-quote-left"></i> Bl0g</button>
-            <button onclick="openpage('pr0se.html')" class="btn btn-sm btn-success btn-fill"><i class="fas fa-palette"></i> W00dles</button>
-          </div>
-        </p>
-        <p>
-          <div class="col">
-            <button onclick="openpage('h0la.html')" class="btn btn-sm btn-warning btn-fill"><i class="far fa-comments"></i> H0la</button>
-          </div>
-        </p>
-      </div>
-    </div>
-
 
     <footer class="footer footer-black">
       <div class="container">
@@ -131,6 +137,11 @@
         </div>
       </div>
     </footer>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
   <!-- Core JS Files -->
@@ -147,7 +158,6 @@
 
   <!--  Paper Kit Initialization and functons -->
   <script src="./js/paper-kit.js?v=2.1.0"></script>
-  <script src="./js/custom.js"></script>
 
 
 </html>
