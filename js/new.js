@@ -218,21 +218,21 @@ var myskills = {
 
 
 function lily() {
-  zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
+  /*zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
   zingchart.TOUCHZOOM = 'pinch';
   zingchart.render({
     id: 'mydomains',
     data: mydomain,
     height: 500,
     width: '100%'
-  });
+  });*/
 
-	/*zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
+	zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
   zingchart.TOUCHZOOM = 'pinch';
   zingchart.render({
     id: 'myskills',
     data: myskills,
     height: 500,
     width: '100%'
-  });*/
+  });
 };
