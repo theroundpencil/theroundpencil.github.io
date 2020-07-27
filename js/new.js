@@ -215,6 +215,7 @@ var myskills = {
 
 function lily() {
   zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
+  zingchart.TOUCHZOOM = 'pinch';
   zingchart.render({
     id: 'mydomains',
     data: mydomain,
