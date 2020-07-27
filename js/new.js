@@ -10,12 +10,6 @@ var mydomain = {
           text: '%text'
         }
       },
-	  animation: {
-      effect: 13,
-      method: 3,
-      sequence: 2,
-      delay: 1000
-    },
       "words": [{
           text: "IIoT",
           count: 7
