@@ -7,60 +7,70 @@ var mydomain = {
       "style": {
         "tooltip": {
           visible: true,
-          text: '%text: %hits Years'
+          text: '%text'
         }
       },
+	  animation: {
+      effect: 13,
+      method: 3,
+      sequence: 2,
+      delay: 1000
+    },
       "words": [{
-          text: "time",
-          count: "342"
+          text: "IIoT",
+          count: 7
         },
         {
-          text: "shampoo",
-          count: "296"
-        },
-        {
-          text: "word2",
+          text: "Manufacturing",
           count: 4
         },
         {
-          text: "word4",
-          count: 8
-        },
-        {
-          text: "word3",
+          text: "Analytics",
           count: 5
+        },
+        {
+          text: "Financial Products",
+          count: 3
+        },
+        {
+          text: "Smart Workplaces",
+          count: 3
         }, {
-          text: "word6",
+          text: "Mobile",
           count: 7
         },
         {
-          text: "word5",
+          text: "SaaS",
           count: 8
         }, {
-          text: "word7",
-          count: 9
+          text: "PaaS",
+          count: 5
         },
         {
-          text: "word8",
-          count: 2
-        }, {
-          text: "word9",
-          count: 1
-        },
-        {
-          text: "word10",
-          count: 11
-        }, {
-          text: "word12",
+          text: "Gamification",
           count: 6
+        }, {
+          text: "Digital Transformation",
+          count: 3
         },
         {
-          text: "word13",
-          count: 7
-        },
-        {
-          text: "word14",
+          text: "Asset Lifecycle Management",
           count: 4
+        }, {
+          text: "Big Data",
+          count: 4
+        },
+        {
+          text: "B2B",
+          count: 10
+        },
+        {
+          text: "B2C",
+          count: 5
+        },
+		{
+          text: "Products",
+          count: 11
         }
       ]
     }
@@ -133,7 +143,7 @@ var myskills = {
     visible: false
   },
   series: [{
-      values: [95, 80, 90, 80, 75, 85, 85, 95],
+      values: [95, 85, 90, 80, 85, 95, 90, 95],
       backgroundColor: '#E71D36',
       borderRadius: '10px 0px 0px 10px',
       rules: [{
@@ -171,7 +181,7 @@ var myskills = {
       ]
     },
     {
-      values: [5, 20, 10, 20, 25, 15, 15, 05],
+      values: [5, 15, 10, 20, 15, 05, 10, 05],
       backgroundColor: '#E71D36',
       borderRadius: '0px 10px 10px 0px',
       rules: [{
