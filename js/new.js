@@ -9,7 +9,7 @@ var mydomain = [
 	{word:'PaaS', weight: 50},
 	{word:'Gamification', weight: 70},
 	{word:'Digital Transformation', weight: 50},
-	{word:'Asset Lifecycle Management', weight: 50},
+	{word:'ALM', weight: 50},
 	{word:'Big Data', weight: 70},
 	{word:'B2B', weight: 100},
 	{word:'B2C', weight: 70},
