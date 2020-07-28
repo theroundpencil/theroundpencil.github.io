@@ -175,11 +175,11 @@ function lily() {
 	  });
 	$("#wordCloud").jQWCloud({
 	  words: mydomain,
-		  minFont: 10,
-		  maxFont: 100,
+		  minFont: 15,
+		  maxFont: 50,
 		  fontOffset: 0,
 		  showSpaceDIV:false,
-		  verticalEnabled:false,
+		  verticalEnabled:true,
 		  cloud_color:null,
 		  cloud_font_family:null,
 		  spaceDIVColor:'black',
