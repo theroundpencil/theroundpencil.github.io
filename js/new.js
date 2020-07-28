@@ -1,75 +1,21 @@
-var mydomain = {
-  theme: 'dark',
-  "graphset": [{
-    "type": "wordcloud",
-    "background-color": "#0b1011",
-    "options": {
-      "style": {
-        "tooltip": {
-          visible: true,
-          text: '%text'
-        }
-      },
-      "words": [{
-          text: "IIoT",
-          count: 7
-        },
-        {
-          text: "Manufacturing",
-          count: 4
-        },
-        {
-          text: "Analytics",
-          count: 5
-        },
-        {
-          text: "Financial Products",
-          count: 3
-        },
-        {
-          text: "Smart Workplaces",
-          count: 3
-        }, {
-          text: "Mobile",
-          count: 7
-        },
-        {
-          text: "SaaS",
-          count: 8
-        }, {
-          text: "PaaS",
-          count: 5
-        },
-        {
-          text: "Gamification",
-          count: 6
-        }, {
-          text: "Digital Transformation",
-          count: 3
-        },
-        {
-          text: "Asset Lifecycle Management",
-          count: 4
-        }, {
-          text: "Big Data",
-          count: 4
-        },
-        {
-          text: "B2B",
-          count: 10
-        },
-        {
-          text: "B2C",
-          count: 5
-        },
-		{
-          text: "Products",
-          count: 11
-        }
-      ]
-    }
-  }]
-};
+var mydomain = [
+	{word:'IIoT', weight: 70},
+	{word:'Manufacturing', weight: 50},
+	{word:'Analytics', weight: 50},
+	{word:'Financial Products', weight: 40},
+	{word:'Smart Workplaces', weight: 50},
+	{word:'Mobile', weight: 70},
+	{word:'SaaS', weight: 80},
+	{word:'PaaS', weight: 50},
+	{word:'Gamification', weight: 60},
+	{word:'Digital Transformation', weight: 50},
+	{word:'Asset Lifecycle Management', weight: 50},
+	{word:'Big Data', weight: 60},
+	{word:'B2B', weight: 100},
+	{word:'B2C', weight: 50},
+	{word:'Products', weight: 100},
+	{word:'Platforms', weight: 80}
+		   ];
 
 
 var myskills = {
@@ -218,21 +164,27 @@ var myskills = {
 
 
 function lily() {
-  /*zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
-  zingchart.TOUCHZOOM = 'pinch';
-  zingchart.render({
-    id: 'mydomains',
-    data: mydomain,
-    height: 500,
-    width: '100%'
-  });*/
 
 	zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
-  zingchart.TOUCHZOOM = 'pinch';
-  zingchart.render({
-    id: 'myskills',
-    data: myskills,
-    height: 500,
-    width: '100%'
-  });
+	zingchart.TOUCHZOOM = 'pinch';
+	  zingchart.render({
+		id: 'myskills',
+		data: myskills,
+		height: 500,
+		width: '100%'
+	  });
+	$("#wordCloud").jQWCloud({
+	  words: mydomain,
+		  minFont: 10,
+		  maxFont: 100,
+		  fontOffset: 0,
+		  showSpaceDIV:false,
+		  verticalEnabled:false,
+		  cloud_color:null,
+		  cloud_font_family:null,
+		  spaceDIVColor:'black',
+		  padding_left:null,
+		  word_common_classes:null
+	});
+
 };
